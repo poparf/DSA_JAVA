@@ -73,7 +73,7 @@ public class Queue<T> implements Iterable<T> {
 
     public T poll() {
         if(isEmpty())
-            throw new RuntimeException("Queue emtpy")
+            throw new RuntimeException("Queue empty");
         return list.removeFirst();
     }
 
@@ -85,6 +85,4 @@ public class Queue<T> implements Iterable<T> {
     public Iterator<T> iterator() {
         return list.iterator();
     }
-
-    private LinkedList<T>
 }
